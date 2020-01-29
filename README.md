@@ -7,17 +7,35 @@ Accessible content - voice computing -  searching - marketing
 
 ## Who benefits?
 
-everyone
-businesses
-customers
-people requiring accessability features
-future proof
-new revenue streams
+* everyone
+* businesses
+* customers
+* people with impairments
+* future proof
+* new revenue streams
 
+## The Challenge
+This site was initially made without Accessability and SEO in mind. The excercise was to optomise, while learning the concepts of accessability and search engine optimisation. 
 
+### User Story
+```
+AS A marketing agency
+I WANT a codebase that follows accessibility standards
+SO THAT our own site is optimized for search engines
+```
+### Acceptance Criteria
+* Use of semantic HTML elements
+* HTML elements follow a logical structure independent of styling and positioning
+* Image element with accessible alt attributes
+* Heading attributes fall in sequential order
+* A concise & descriptive title.
+
+### Employing semantic HTML elements and consolodating the CSS
 Ensure that all links are functioning correctly and 
 clean up the CSS to make it more efficient, 
 
+#### Optomised code
+##### HTML
 ```html
         <!-- Main Content -->
         <section id="content">
@@ -34,37 +52,37 @@ clean up the CSS to make it more efficient,
 
         </section>
 ```
-consolidating CSS selectors and properties, 
-organizing them to follow the semantic structure of the HTML elements, and 
-including comments before each element or section of the page.
+##### CSS
+```css
+section#content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
 
-### User Story
+#content article{
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
 
-```
-AS A marketing agency
-I WANT a codebase that follows accessibility standards
-SO THAT our own site is optimized for search engines
+#content article img {
+    max-height: 200px;
+}
+
+#content article h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
 ```
 
-### Acceptance Criteria
-
-```
-GIVEN a webpage meets accessibility standards
-WHEN I view the source code
-THEN I find semantic HTML elements
-WHEN I view the structure of the HTML elements
-THEN I find that the elements follow a logical structure independent of styling and positioning
-WHEN I view the image elements
-THEN I find accessible alt attributes
-WHEN I view the heading attributes
-THEN they fall in sequential order
-WHEN I view the title element
-THEN I find a concise, descriptive title
-```
 
 ### Results
 
-You are required to submit the following for review:
+The following is a list of the required outputs of this project. Including the url of the deployed web application and the url of this repo, with this README :)
 
 * Deployed App - https://jschrbr.github.io/horiseon/
 
